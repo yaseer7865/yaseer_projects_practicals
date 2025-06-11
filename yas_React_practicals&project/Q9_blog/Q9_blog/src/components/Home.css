@@ -1,0 +1,25 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #eb14c7cc, #6610f2);
+    color: white;
+  }
+  
+  .home-content {
+    text-align: center;
+    background-color: rgba(231, 24, 24, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(117, 125, 247, 0.2);
+  }
+  
+  .home-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .home-content p {
+    font-size: 1.2rem;
+  }
