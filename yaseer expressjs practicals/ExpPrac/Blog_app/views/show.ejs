@@ -1,0 +1,20 @@
+<%- include('partials/header') %>
+
+<main class="container mt-5">
+  <div class="card shadow-sm">
+    <img src="<%= post.imageUrl || 'https://via.placeholder.com/800x400?text=No+Image+Available' %>" alt="Post Image" class="card-img-top" style="object-fit: cover; max-height: 400px;">
+    <div class="card-body">
+      <h2 class="card-title mb-3"><%= post.title %></h2>
+      <p class="card-text"><%= post.body %></p>
+      <a href="/posts" class="btn btn-secondary mt-3">← Back to Posts</a>
+      <form action="/posts/<%= post._id %>/delete" method="POST" onsubmit="return confirm('Delete this post?');">
+  <button class="btn btn-danger">Delete</button>
+</form>
+
+<a href="/posts/<%= post._id %>/edit" class="btn btn-warning">Edit</a>
+
+    </div>
+  </div>
+</main>
+
+<%- include('partials/footer') %>

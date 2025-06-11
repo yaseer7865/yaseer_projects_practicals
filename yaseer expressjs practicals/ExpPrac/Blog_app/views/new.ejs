@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+<main class="container mt-5">
+  <h2>Create a New Post</h2>
+  <form action="/posts" method="POST" class="card p-4 shadow-sm">
+
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input type="text" id="title" name="title" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label for="imageUrl" class="form-label">Image URL</label>
+      <input type="url" id="imageUrl" name="imageUrl" class="form-control" placeholder="https://example.com/image.jpg">
+      <div class="form-text">Optional. Must end with .jpg, .png, .gif, etc.</div>
+    </div>
+
+    <div class="mb-3">
+      <label for="body" class="form-label">Content</label>
+      <textarea id="body" name="body" rows="6" class="form-control" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success">Publish</button>
+  </form>
+</main>
+
+<%- include('partials/footer') %>
