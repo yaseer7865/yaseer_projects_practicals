@@ -1,0 +1,79 @@
+.h2{
+    background-color: rgb(30, 30, 35);
+    text-align: center;
+    position: relative;
+    
+}
+
+table{
+    border: 2px solid;
+    border-collapse: separate;
+}
+th,td{
+    border: 1px solid;
+}
+
+.add-product-btn:hover {
+  background-color: #343a40 !important;
+  color: #ffc107 !important;
+  transform: scale(1.05);
+  transition: all 0.2s;
+}
+.add-product-btn {
+  background-color: #ffc107 !important;
+  color: #343a40 !important;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.add-user-btn:hover {
+  background-color: #343a40 !important;
+  color: #ffc107 !important;
+  transform: scale(1.05);
+  transition: all 0.2s;
+}
+.add-user-btn {
+  background-color: #ffc107 !important;
+  color: #343a40 !important;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+/* User table styles */
+.user-table {
+  width: 100%;
+  border: 2px solid #343a40;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+.user-table th, .user-table td {
+  border: 1px solid #343a40;
+  padding: 8px 12px;
+  text-align: center;
+}
+.user-table th {
+  background-color: #343a40;
+  color: #ffc107;
+}
+.user-table tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* Error page styles */
+.error-page {
+  color: #d9534f;
+  text-align: center;
+  margin-top: 5rem;
+}
+
+/* Footer styles */
+footer {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
